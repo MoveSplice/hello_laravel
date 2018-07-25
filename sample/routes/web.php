@@ -11,17 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+    //return view('welcome');
+//});
 
 
-Route::get('get',function(){
-	return 'Hello ,welcome to LaravelAcademy.org';
-});
+//Route::get('get',function(){
+	//return 'Hello ,welcome to LaravelAcademy.org';
+//});
 
+Route::get('/','StaticPagesController@home');
 
+Route::get('/help','StaticPagesController@help');
 
+Route::get('/about','StaticPagesController@about');
 
 
 
